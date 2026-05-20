@@ -102,3 +102,29 @@ for response in responses:
         print("Empty response - skipping")
         continue
     print(f"Valid response: {response}")    
+
+## Test
+
+ai_topics = [ "llm", "RAG", "Bedrock","AI Agents", "Python"]
+
+for list in ai_topics:
+    print(f"{list}")
+
+for i, topics in enumerate(ai_topics):
+    print(f"{i+1}: {topics}")  
+
+### Range loop (1,11)
+
+
+## Task 3: While loop with retry
+
+attempts = 0
+max_attempts = 3
+
+while attempts<max_attempts:
+    print(f"Attempt 1: Calling AI API {attempts+1}")
+    attempts += 1
+
+#Task 4: Loop with break and continue 
+
+numbers = 1,20
